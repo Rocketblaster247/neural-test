@@ -12,7 +12,8 @@
 </div>
 <script>
 var currentFrame = $('#currentFrame');
-var video = VideoFrame({
+var v = document.getElementsByClassName("youtube")[0];
+var video = v.window.VideoFrame({
     id : 'video',
     frameRate: 29.97,
     callback : function(frame) {
